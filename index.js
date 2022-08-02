@@ -36,8 +36,8 @@ function CheckStats(pokemon1, pokemon2) {
 
 function PassInputs(form){
     let inputs = Array.from(form.elements);
-    let pokemon1 = inputs[1];
-    let pokemon2 = inputs[2];
+    let pokemon1 = inputs[0];
+    let pokemon2 = inputs[1];
 
     CheckStats(pokemon1, pokemon2);
 }
