@@ -33,3 +33,11 @@ function CheckStats(pokemon1, pokemon2) {
         return pokemon2
     }
 }
+
+function PassInputs(form){
+    let inputs = Array.from(form.elements);
+    let pokemon1 = inputs[1];
+    let pokemon2 = inputs[2];
+
+    CheckStats(pokemon1, pokemon2);
+}
