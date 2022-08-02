@@ -11,7 +11,7 @@ function FetchPokemonData(pokemon) {
     .then(response => data = response.json);
 
     return data
-  }
+}
 
 function CheckStats(pokemon1, pokemon2) {
     let pokeData1 = FetchPokemonData(pokemon1)["stats"];
@@ -23,7 +23,7 @@ function CheckStats(pokemon1, pokemon2) {
     });
 
     let statTotal2 = 0;
-    pokeData1.forEach(stat => {
+    pokeData2.forEach(stat => {
         statTotal2 = statTotal2 + stat["base_stat"];
     });
 
