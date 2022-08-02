@@ -28,12 +28,14 @@ function CheckStats(pokemon1, pokemon2) {
     });
 
     if(statTotal1 > statTotal2) {
+        document.getElementById("winner").innerText = pokemon1 + " would win"
         return pokemon1
     } else if(statTotal2 > statTotal1) {
+        document.getElementById("winner").innerText = pokemon2 + " would win"
         return pokemon2
     }
 }
-
+document.getElementById("winner").innerText = pokemon1
 function PassInputs(form){
     let inputs = Array.from(form.elements);
     let pokemon1 = inputs[0];
